@@ -49,6 +49,10 @@ window.addEventListener('load', () => {
     var daysHolder = document.getElementById("daysCards");
     var tempsCards = daysHolder.getElementsByClassName('temperature-holder');
     var widget = document.getElementById("widget");
+    var convertKelvin = document.getElementById("convert-kelvin");
+    var convertKm = document.getElementById("convert-km");
+    var click = 0;
+    var clickKm = 0;
 
     //-----------Loading Placeholders------------//
     var iconPlaceholder = document.getElementById('widget-icon-ph');
@@ -112,9 +116,35 @@ window.addEventListener('load', () => {
             }
 
              //-----Setting wind speed------//
-             windSpeedPlaceholder.innerHTML = widgetData[0].windSpeed + " ";
+             windSpeedPlaceholder.innerHTML = widgetData[0].windSpeed + " m/s";
+
+              
               
         })
     })
+     //-----Toggle button listeners------//
+        convertKelvin.addEventListener('click', () => {
+            return function() {
+            if(click === 0) {
+                let celsius = tempPlaceholder.innerHTML.substring(0,2);
+                console.log(celsius);
+                let kelvin = parseInt(celsius) + 273 + "K";
+                tempPlaceholder.innerHTML = kelvin;
+             }
+            click++;
+            }();
+                
+        })
 
-})
+        convertKm.addEventListener('click', () => {
+            return function() {
+            if(clickKm === 0) {
+                let speed = windSpeedPlaceholder.innerHTML;
+                let speedKm = (parseInt(speed)/1000)* 3600;
+                windSpeedPlaceholder.innerHTML = speedKm + " km/h";
+             }
+            clickKm++;
+            }();
+                
+        })
+});

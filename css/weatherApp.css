@@ -43,3 +43,14 @@ ul {
     width: 20px;
     height: 20px;
 }
+
+#convert-buttons{
+    position: relative;
+  top: -512px;
+  right: -1000px;
+}
+
+.bg-convert {
+    background-color: brown;
+    box-shadow: 4px 4px 2px grey;
+}
