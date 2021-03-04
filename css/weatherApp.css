@@ -11,7 +11,7 @@ ul {
 }
 
 .bg-blue {
-    background-color: #2c59b5;
+    background-color: rgba(44, 90, 181, 0.9);
 }
 
 .weather-icon{
@@ -21,4 +21,25 @@ ul {
 
 .myCard {
     width: 250px;
+}
+
+
+.bg-widget {
+    background-color: rgba(44, 90, 181, 0.2);
+    border-radius: 35px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.widget-temperature {
+    font-size: 90px;
+}
+
+.widget-type {
+    font-size: 40px;
+}
+
+.wind-icon{
+    width: 20px;
+    height: 20px;
 }

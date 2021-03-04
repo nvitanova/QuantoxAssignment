@@ -28,7 +28,7 @@
 <div class = "mt-4">
     <ul id="daysCards" class="d-flex justify-content-around">
         <!---------- List Item ------------>
-        <li>
+        <li id="mon">
             <div class="card myCard text-dark">
                 <div class="card-header bg-light">
                     <h5 class="">Monday
@@ -54,7 +54,7 @@
             </div>
         </li>
         <!---------- List Item ------------>
-        <li>
+        <li id="tue">
             <div class="card myCard text-dark">
                 <div class="card-header bg-light">
                     <h5 class="">Tuesday
@@ -80,7 +80,7 @@
             </div>
         </li>
         <!---------- List Item ------------>
-        <li>
+        <li id="wed">
             <div class="card myCard text-dark">
                 <div class="card-header bg-light">
                     <h5 class="">Wednesday
@@ -106,7 +106,7 @@
             </div>
         </li>
         <!---------- List Item ------------>
-        <li>
+        <li id="thu">
             <div class="card myCard text-dark">
                 <div class="card-header bg-light">
                     <h5 class="">Thursday
@@ -132,7 +132,7 @@
             </div>
         </li>
         <!---------- List Item ------------>
-        <li>
+        <li id="fri">
             <div class="card myCard text-dark">
                 <div class="card-header bg-light">
                     <h5 class="">Friday
@@ -162,8 +162,27 @@
 
 <!---------- Widget Holder ------------>
 
-<div class="bg-widget">
+<div id="widget" class="container mb-4 mt-4 bg-widget" hidden>
 
+        <div class="row">
+            <div class="col-md-4">
+                <img id="widget-icon-ph" src="">
+            </div>
+            <div class="col-md-8">
+                <div class="text-center m-5">
+                    <h3 id="widget-title-ph" class="">
+                    
+                    </h3>
+                </div>
+                <div class="m-5">
+                    <p class="text-center widget-temperature" id="widget-temperature-ph"></p>
+                    <p class="text-center widget-type" id="widget-type-ph"></p>
+                </div>
+                <div class="text-center m-5">
+                    Wind <img src="" class="wind-icon" id="widget-wind-icon-ph"></i> <span id="widget-speed-ph"></span>m/s
+                </div>
+            </div>
+        </div>
 </div>
 
 
