@@ -3,8 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="weatherApp.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+<!---------- Header ------------>
+
+<header >
+    <div class="bg-blue text-danger rounded-bottom d-flex justify-content-center align-items-center">
+        <div class="">
+            <h1 class="text-white header-text pt-4">Weather App</h1>
+        </div>
+    </div>
+</header>
+
+<!---------- List of Days ------------>
+
+<div class = "mt-4">
+    <ul class="d-flex justify-content-around">
+        <!---------- List Item ------------>
+        <li>
+            <div class="card myCard text-dark">
+                <div class="card-header bg-light">
+                    <h5 class="">Monday
+                        <small>
+                            <div class="d-inline-block text-center text-muted">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">04.04.2021</p>
+                            </div><br>
+                        </small>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-block">
+                        <div class="d-flex justify-content-center">
+                            <img src="./img/iconfinder_Cloudy_Sunny_5729392.png" class="weather-icon" aria-hidden="true"/>
+                        </div>
+                        <p class="text-center"></p>
+                    </div><br>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-block btn-outline-dark" >Show Details</button>
+                </div>
+            </div>
+        </li>
+        <!---------- List Item ------------>
+        <li>
+            <div class="card myCard text-dark">
+                <div class="card-header bg-light">
+                    <h5 class="">Tuesday
+                        <small>
+                            <div class="d-inline-block text-center text-muted">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">05.04.2021</p>
+                            </div><br>
+                        </small>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-block">
+                        <div class="d-flex justify-content-center">
+                            <img src="./img/iconfinder_Cloudy_Sunny_5729392.png" class="weather-icon" aria-hidden="true"/>
+                        </div>
+                        <p class="text-center"></p>
+                    </div><br>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-block btn-outline-dark" >Show Details</button>
+                </div>
+            </div>
+        </li>
+        <!---------- List Item ------------>
+        <li>
+            <div class="card myCard text-dark">
+                <div class="card-header bg-light">
+                    <h5 class="">Wednesday
+                        <small>
+                            <div class="d-inline-block text-center text-muted">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">06.04.2021</p>
+                            </div><br>
+                        </small>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-block">
+                        <div class="d-flex justify-content-center">
+                            <img src="./img/iconfinder_Cloudy_Sunny_5729392.png" class="weather-icon" aria-hidden="true"/>
+                        </div>
+                        <p class="text-center"></p>
+                    </div><br>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-block btn-outline-dark" >Show Details</button>
+                </div>
+            </div>
+        </li>
+        <!---------- List Item ------------>
+        <li>
+            <div class="card myCard text-dark">
+                <div class="card-header bg-light">
+                    <h5 class="">Thursday
+                        <small>
+                            <div class="d-inline-block text-center text-muted">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">07.04.2021</p>
+                            </div><br>
+                        </small>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-block">
+                        <div class="d-flex justify-content-center">
+                            <img src="./img/iconfinder_Cloudy_Sunny_5729392.png" class="weather-icon" aria-hidden="true"/>
+                        </div>
+                        <p class="text-center"></p>
+                    </div><br>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-block btn-outline-dark" >Show Details</button>
+                </div>
+            </div>
+        </li>
+        <!---------- List Item ------------>
+        <li>
+            <div class="card myCard text-dark">
+                <div class="card-header bg-light">
+                    <h5 class="">Friday
+                        <small>
+                            <div class="d-inline-block text-center text-muted">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">08.04.2021</p>
+                            </div><br>
+                        </small>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-block">
+                        <div class="d-flex justify-content-center">
+                            <img src="./img/iconfinder_Cloudy_Sunny_5729392.png" class="weather-icon" aria-hidden="true"/>
+                        </div>
+                        <p class="text-center"></p>
+                    </div><br>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-block btn-outline-dark" >Show Details</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!---------- Widget Holder ------------>
+
 
 </body>
 </html>
